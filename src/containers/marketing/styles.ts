@@ -33,7 +33,7 @@ export const LogoContainer = styled.div`
 `
 
 export const Title = styled.span`
-  font-size: 50px;
+  font-size: 48px;
   color: #000000;
   line-height: 70px;
   margin: 75px 120px;
@@ -53,7 +53,7 @@ export const Title = styled.span`
   }
 
   @media (max-width: 390px) {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 40px;
     margin-top: 50px;
     margin: 40px 40px;
@@ -161,7 +161,7 @@ export const Description = styled.span`
   }
 
   @media (max-width: 639px) {
-    font-size: 34px;
+    font-size: 26px;
     line-height: 50px;
   }
 
@@ -171,7 +171,7 @@ export const Description = styled.span`
   }
 
   @media (max-width: 390px) {
-    font-size: 22px;
+    font-size: 20px;
     margin: 120px 20px;
   }
 `

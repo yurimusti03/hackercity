@@ -26,7 +26,7 @@ const Marketing = () => {
         ]}
       >
           <Styled.Title
-          fontSize={[20, 40, 50]}
+          fontSize={[20, 30, 40]}
           textAlign={["center", "center", "inherit"]}
           mx={[55, 80, 120]}
           >
@@ -63,7 +63,7 @@ const Marketing = () => {
         </Styled.List>
 
           <Styled.Description 
-          fontSize={[20, 40, 50]}
+          fontSize={[20, 25, 30]}
           textAlign={["center", "center", "inherit"]}
           mx={[55, 80, 120]}
           >

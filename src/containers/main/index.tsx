@@ -105,7 +105,7 @@ const Main = () => {
       </Styled.LogoContainer>
 
       <Styled.TextContainer mx={[50, 50, 160]}>
-        <Styled.Title fontSize={[30, 40, 60]}>
+        <Styled.Title fontSize={[30, 30, 45]}>
           <Fade left delay={100}>
             Uma solução inteligente de marketing e publicidade para sua empresa!
           </Fade>
@@ -115,9 +115,9 @@ const Main = () => {
           <Fade left delay={200}>
             <Styled.RegisterBtn
               onClick={showModal}
-              fontSize={[18, 24, 24]}
-              py={[18, 25, 25]}
-              width={[200, 300, 300]}
+              fontSize={[14, 18, 18]}
+              py={[15, 18, 18]}
+              width={[150, 230, 230]}
             >
               SAIBA MAIS
             </Styled.RegisterBtn>

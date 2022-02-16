@@ -33,26 +33,26 @@ export const TextContainer = styled.div`
 `
 
 export const Title = styled.span`
-  font-size: 70px;
+  font-size: 40px;
   color: #000000;
   font-weight: bold;
-  line-height: 70px;
+  line-height: 10px;
   text-align: center;
   ${typography}
   ${space}
 
   @media (max-width: 1040px) {
-    font-size: 54px;
+    font-size: 40px;
     line-height: 70px;
   }
 
   @media (max-width: 639px) {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 40px;
   }
 
   @media (max-width: 478px) {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 40px;
     margin-top: 30px;
     margin: 40px 40px;
@@ -67,10 +67,10 @@ export const Title = styled.span`
 `
 
 export const SubTitle = styled.span`
-  font-size: 60px;
+  font-size: 35px;
   color: #000000;
   text-align: center;
-  line-height: 80px;
+  line-height: 60px;
   margin-top: 50px;
   ${typography}
   ${space}
@@ -82,7 +82,7 @@ export const SubTitle = styled.span`
 
   @media (max-width: 1040px) {
     font-size: 34px;
-    line-height: 60px;
+    line-height: 40px;
   }
 `
 
@@ -94,12 +94,12 @@ export const RegisterBtn = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 32px;
-  width: 270px;
+  padding: 18px 32px;
+  width: 250px;
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 40px;
   font-weight: bold;
   margin-bottom: 50px;
@@ -165,7 +165,8 @@ export const ListTitle = styled.span`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;]
+    font-size: 20px;
   }
 
   @media (max-width: 770px) {
@@ -194,19 +195,23 @@ export const TotalPriceContainer = styled.div`
   }
 
   svg {
+
+    height: 200px;
+    width: 500px;
+
     @media (max-width: 1340px) {
       height: 170px;
-      width: 500px;
+      width: 450px;
     }
 
     @media (max-width: 1040px) {
       height: 150px;
-      width: 480px;
+      width: 430px;
     }
 
     @media (max-width: 770px) {
       height: 160px;
-      width: 440px;
+      width: 400px;
     }
 
     @media (max-width: 642px) {
@@ -220,7 +225,7 @@ export const TotalPriceContainer = styled.div`
 export const FinalDescription = styled.span`
   margin: 0px 160px;
   color: #000000;
-  font-size: 45px;
+  font-size: 30px;
   font-weight: bold;
   max-width: 750px;
   align-self: flex-start;
@@ -235,7 +240,7 @@ export const FinalDescription = styled.span`
 
   @media (max-width: 1040px) {
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     
   }
 `

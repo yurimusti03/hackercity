@@ -52,14 +52,14 @@ export const Section = styled.div`
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-  margin-top: 20px;
-  margin-right: 70px;
+  margin-top: 30px;
+  margin-right: 0px;
 `
 
 
 
 export const Title = styled.a`
-  font-size: 22px;
+  font-size: 16px;
   color: #fff;
   font-weight: bold;
   line-height: 50px;
@@ -81,7 +81,7 @@ export const SocialMedia = styled.div`
   margin-top: 10px;
 
   svg {
-    width: 40px;
+    width: 30px;
     cursor: pointer;
     opacity: 0.6;
     transition: 0.5s;

@@ -21,21 +21,21 @@ export const LogoContainer = styled.div`
   margin: 0px 100px;
 
   svg {
-    height: 332px;
-    width: 480px;
+    height: 272px;
+    width: 430px;
 
     @media (max-width: 830px) {
-      height: 300px;
-      width: 440px;
+      height: 270px;
+      width: 400px;
     }
 
     @media (max-width: 642px) {
-      height: 250px;
-      width: 350px;
+      height: 200px;
+      width: 300px;
     }
     @media (max-width: 400px) {
-      height: 200px;
-      width: 260px;
+      height: 150px;
+      width: 200px;
     }
   }
 
@@ -83,12 +83,12 @@ export const RegisterBtn = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 25px;
-  width: 290px;
+  padding: 15px 25px;
+  width: 240px;
   cursor: pointer;
   text-decoration: none;
   color: #000000;
-  font-size: 24px;
+  font-size: 18px;
   border-radius: 40px;
   font-weight: bold;
   background-color: #FFCB11;

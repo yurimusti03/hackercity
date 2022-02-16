@@ -16,7 +16,7 @@ export const MainBanner = styled.div`
 `;
 
 export const Title = styled.span`
-  font-size: 65px;
+  font-size: 55px;
   color: #fff;  
   text-align: center;
   line-height: 70px;
@@ -27,6 +27,7 @@ export const Title = styled.span`
 
   .react-reveal {
     text-align: center;
+    font-size: 40px;
   }
 
   span {
@@ -52,13 +53,18 @@ export const ButtonContainer = styled.div`
 ` 
 
 export const SubTitle = styled.span`
-  font-size: 36px;
+  font-size: 32px;
   color: #fff;
   align-items: center;
   text-align: center;
   margin-top: 20px;
   ${typography}
   ${space}
+
+  .react-reveal {
+    text-align: center;
+    font-size: 36px;
+  }
 
   span {
     color: #11FFB3;
@@ -71,6 +77,11 @@ export const SubTitle = styled.span`
 
   @media (max-width: 638px) {
     max-width: 400px;
+
+    .react-reveal {
+    text-align: center;
+    font-size: 30px;
+  }
   }
 
   @media (max-width: 390px) {
@@ -123,17 +134,17 @@ export const Card = styled.div`
   border: 5px solid #fff;
   border-radius: 30px;
   width: 510px;
-  height: 710px;
+  height: 670px;
 
   @media (max-width: 1040px) {
     text-align: center;
     width: 510px;
-    height: 800px;
+    height: 700px;
   }
 
   @media (max-width: 638px) {
     text-align: center;
-    width: 330px;
+    width: 370px;
     height: 750px;
   }
 
@@ -170,8 +181,8 @@ export const IconContainer = styled.div`
   margin-top: 50px;
 
   svg {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
 
     @media (max-width: 638px) {
       width: 150px;

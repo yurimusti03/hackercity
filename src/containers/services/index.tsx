@@ -27,7 +27,7 @@ const Main = () => {
       ]}
     >
       <Styled.Title
-        fontSize={[24, 40, 50]}
+        fontSize={[20, 30, 50]}
         textAlign={["center", "center", "inherit"]}
         mx={[20, 80, 120]}
       >
@@ -35,7 +35,7 @@ const Main = () => {
       </Styled.Title>
 
       <Styled.SubTitle
-        fontSize={[24, 40, 50]}
+        fontSize={[20, 30, 50]}
         textAlign={["center", "center", "center"]}
         mx={[20, 80, 120]}
       >
