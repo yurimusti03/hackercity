@@ -13,166 +13,34 @@ import { useEffect, useState } from "react";
 
 import { Modal, Button, notification } from "antd";
 
-import Loading from "../../components/Loading";
-
-const CREATE_LEAD = gql`
-  mutation CreateLandingpage($input: LandingpageInput) {
-    createLandingpage(input: $input) {
-      status {
-        status
-        message
-      }
-    }
-  }
-`;
-
 const Main = () => {
-  const router = useRouter();
-
-  const [createLandingpage, { data, loading: loadingCreate, error }] =
-    useMutation(CREATE_LEAD);
-
-  const [email, setEmail] = useState("");
-  const [nome, setNome] = useState("");
-  const [celular, setCelular] = useState("");
-  const [funcionarios, setFuncionarios] = useState("");
-  const [instagram, setInstagram] = useState("");
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
-
-  useEffect(() => {
-    if (data?.createLandingpage) {
-      if (data.createLandingpage.status.status === 200) {
-        notification.success({
-          message: "Sucesso",
-          description: "Cadastro efetuado com sucesso.",
-        });
-        handleCancel();
-      } else {
-        notification.error({
-          message: "Error",
-          description: "Ocorreu um erro ao tentar cadastrar suas informações.",
-        });
-      }
-    }
-  }, [data]);
-
-  const _handleCreate = () => {
-    if (
-      nome === "" ||
-      email === "" ||
-      celular === "" ||
-      funcionarios === "" ||
-      instagram === ""
-    ) {
-      notification.warning({
-        message: "Alerta",
-        description:
-          "É necessário preencher todos os campos antes de continuar.",
-      });
-    } else {
-      createLandingpage({
-        variables: {
-          input: {
-            idEmpresa: "620c11f9169525a636b9d917",
-            nome,
-            email,
-            celular,
-            funcionarios,
-            instagram,
-          },
-        },
-      });
-    }
-  };
-
   return (
     <Styled.MainBanner
+      id="#"
       justifyContent={["center", "center", "center"]}
       backgroundImage={[`url(${MainBg})`, `url(${MainBg})`, `url(${MainBg})`]}
     >
-      <Styled.LogoContainer>
-        <Fade left>
-          <Logo />
-        </Fade>
+      <Styled.LogoContainer mt={[50, 50, 0]} ml={[50, 50, 128]}>
+        <Logo />
       </Styled.LogoContainer>
 
-      <Styled.TextContainer mx={[50, 50, 160]}>
-        <Styled.Title fontSize={[30, 30, 45]}>
-          <Fade left delay={100}>
-            Uma solução inteligente de marketing e publicidade para sua empresa!
-          </Fade>
+      <Styled.TextContainer ml={[50, 70, 124]} mt={[0, 0, 16]}>
+        <Styled.Title fontSize={[30, 30, 64]} lineHeight={["1", "1", "1.2"]}>
+          Uma solução inteligente de
+          <br /> marketing e publicidade <br />
+          para sua empresa!
         </Styled.Title>
 
-        <Styled.ButtonContainer>
-          <Fade left delay={200}>
-            <Styled.RegisterBtn
-              onClick={showModal}
-              fontSize={[14, 18, 18]}
-              py={[15, 18, 18]}
-              width={[150, 230, 230]}
-            >
-              SAIBA MAIS
-            </Styled.RegisterBtn>
-          </Fade>
-          <Modal
-            title="Para ficar por dentro das novidades que vão acontecer, inscreva-se abaixo."
-            visible={isModalVisible}
-            onOk={_handleCreate}
-            onCancel={handleCancel}
+        <Styled.ButtonContainer mt={[32, 32, 16]}>
+          <Styled.RegisterBtn
+            onClick={() => {
+              window.scrollBy(0, 764);
+            }}
+            fontSize={[18, 18, 26]}
+            width={[150, 230, 230]}
           >
-            <Styled.Form>
-              <Styled.InputContainer>
-                Nome:
-                <Styled.Input
-                  placeholder="Seu nome..."
-                  type="name"
-                  value={nome}
-                  onChange={(e) => setNome(e.target.value)}
-                />
-              </Styled.InputContainer>
-              <Styled.InputContainer>
-                Seu melhor email:
-                <Styled.Input
-                  placeholder="exemplo@email.com.br"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </Styled.InputContainer>
-              <Styled.InputContainer>
-                Seu Whatsapp
-                <Styled.Input
-                  placeholder="(DDD) 99999-8888"
-                  value={celular}
-                  onChange={(e) => setCelular(e.target.value)}
-                />
-              </Styled.InputContainer>
-              <Styled.InputContainer>
-                Numero de funcionários:
-                <Styled.Input
-                  placeholder="Ex: 48"
-                  value={funcionarios}
-                  onChange={(e) => setFuncionarios(e.target.value)}
-                />
-              </Styled.InputContainer>
-              <Styled.InputContainer>
-                Instagram da empresa:
-                <Styled.Input
-                  placeholder="@suaempresa"
-                  value={instagram}
-                  onChange={(e) => setInstagram(e.target.value)}
-                />
-              </Styled.InputContainer>
-            </Styled.Form>
-          </Modal>
+            SAIBA MAIS
+          </Styled.RegisterBtn>
         </Styled.ButtonContainer>
       </Styled.TextContainer>
     </Styled.MainBanner>

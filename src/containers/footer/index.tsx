@@ -21,21 +21,19 @@ const Footer = () => {
   return (
     <Styled.MainBanner justifyContent={["center", "center", "center"]}>
       <Styled.MainContainer>
-        <Fade left>
-          <Styled.LogoContainer>
-            <Logo />
-          </Styled.LogoContainer>
-        </Fade>
+        <Styled.LogoContainer>
+          <Logo />
+        </Styled.LogoContainer>
 
         <Styled.Section>
           <Styled.Title>
-            <Fade right>Sobre a FunMídia</Fade>
+            {/* <Fade right>Sobre a FunMídia</Fade> */}
           </Styled.Title>
           <Styled.Title>
             <Fade right>Fale Conosco</Fade>
           </Styled.Title>
           <Styled.Title>
-            <Fade right>Trabalhe Conosco</Fade>
+            {/* <Fade right>Trabalhe Conosco</Fade> */}
           </Styled.Title>
 
           <Styled.SocialMedia>
@@ -43,14 +41,15 @@ const Footer = () => {
               <Styled.IconContainer>
                 <Instagram
                   onClick={() => {
-                    const url = "https://instagram.com/funmidiaoficial?utm_medium=copy_link";
+                    const url =
+                      "https://instagram.com/funmidiaoficial?utm_medium=copy_link";
                     window.open(url, "_blank");
                   }}
                 />
               </Styled.IconContainer>
             </Fade>
             <Fade bottom>
-            <Styled.IconContainer>
+              <Styled.IconContainer>
                 <Facebook
                   onClick={() => {
                     const url = "https://www.facebook.com/funmidiaoficial";
@@ -60,17 +59,7 @@ const Footer = () => {
               </Styled.IconContainer>
             </Fade>
             <Fade bottom>
-            <Styled.IconContainer>
-                <Twitter
-                  onClick={() => {
-                    const url = "";
-                    window.open(url, "_blank");
-                  }}
-                />
-              </Styled.IconContainer>
-            </Fade>
-            <Fade bottom>
-            <Styled.IconContainer>
+              <Styled.IconContainer>
                 <Linkedin
                   onClick={() => {
                     const url = "https://www.linkedin.com/company/funmidia";
@@ -80,10 +69,11 @@ const Footer = () => {
               </Styled.IconContainer>
             </Fade>
             <Fade bottom>
-            <Styled.IconContainer>
+              <Styled.IconContainer>
                 <Youtube
                   onClick={() => {
-                    const url = "https://youtube.com/channel/UC_Out54KqolOpPzTdoQlYrg";
+                    const url =
+                      "https://youtube.com/channel/UC_Out54KqolOpPzTdoQlYrg";
                     window.open(url, "_blank");
                   }}
                 />
@@ -97,16 +87,12 @@ const Footer = () => {
         <Fade>FunMídia Tecnlogia e informação LTDA</Fade>
       </Styled.Name>
       <Styled.Copyright>
-        <Styled.Cnpj>
-          <Fade>CNPJ: 00.00000.0000/00</Fade>
-        </Styled.Cnpj>
+        <Styled.Cnpj>{/* <Fade>CNPJ: 00.00000.0000/00</Fade> */}</Styled.Cnpj>
 
         <Styled.Terms>
-          <Fade bottom>
-            Termos de Uso | Política e Privacidade | Disclaimer
-            <br />
-            2022 - FunMídia - Todos os direios reservados
-          </Fade>
+          <span>Termos de Uso | Política e Privacidade | Disclaimer</span>
+
+          <span>2022 - FunMídia Todos os direios reservados</span>
         </Styled.Terms>
       </Styled.Copyright>
     </Styled.MainBanner>

@@ -8,7 +8,7 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: Poppins, sans-serif;
+    font-family: Sora, sans-serif;
   }
 
   html {
@@ -56,4 +56,4 @@ export default createGlobalStyle`
       }
     }
   }
-`
+`;

@@ -9,5 +9,5 @@ export const Container = styled.div`
   background-position: center;
   ${background}
   ${layout}
-
+  font-family: "Sora"
 `;

@@ -7,7 +7,7 @@ export const MainCheckbox = styled.div`
   justify-content: center;
 
   span {
-    font-family: Inter;
+    font-family: Sora;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;

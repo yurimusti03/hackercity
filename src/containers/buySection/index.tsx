@@ -12,7 +12,7 @@ import Zoom from "react-reveal/Zoom";
 
 import Loading from "../../components/Loading";
 
-const BuySection = () => {
+const BuySection = ({ showModal }) => {
   const router = useRouter();
 
   return (
@@ -20,32 +20,45 @@ const BuySection = () => {
       justifyContent={["center", "center", "center"]}
       backgroundImage={[`url(${BuyBg})`, `url(${BuyBg})`, `url(${BuyBg})`]}
     >
-      <Styled.TextContainer mx={[30, 70, 160]}>
-        <Styled.Title>
+      <Styled.TextContainer ml={[32, 70, 160]} mr={[32, 70, 160]}>
+        <Styled.Title fontSize={[24, 32, 64]}>
           <Fade left>Agora vamos fazer contas.</Fade>
         </Styled.Title>
-        <Styled.SubTitle>
-          <Fade right>
-            Para você ter tudo que a FunMídia
-            <span>
-              <Fade left>oferece</Fade>
-            </span>
-            dentro da sua emprsa você precisaria de:
-          </Fade>
+        <Styled.SubTitle
+          fontSize={[22, 22, 40]}
+          lineHeight={["1.1", "1.1", "1.5"]}
+        >
+          Para você ter tudo que a FunMídia
+          <br />
+          <span> oferece </span>
+          dentro da sua empresa
+          <br /> você precisaria de:
         </Styled.SubTitle>
       </Styled.TextContainer>
 
-      <Styled.List>
-        <Styled.ListTitle>
+      <Styled.List
+        ml={[60, 80, 120]}
+        mr={[60, 80, 120]}
+        alignItems={["center", "center", "flex-start"]}
+      >
+        <Styled.ListTitle
+          flexDirection={["column", "row", "row"]}
+          fontSize={[16, 18, 26]}
+          textAlign={["center", "", ""]}
+        >
           <Zoom>
             <Styled.Elipse />
           </Zoom>
           <Fade right>
             um copywriter
-            <span>R$ 1.000,00</span>
+            <span>R$ 3.000,00</span>
           </Fade>
         </Styled.ListTitle>
-        <Styled.ListTitle>
+        <Styled.ListTitle
+          flexDirection={["column", "row", "row"]}
+          fontSize={[16, 18, 26]}
+          textAlign={["center", "", ""]}
+        >
           <Zoom delay={100}>
             <Styled.Elipse />
           </Zoom>
@@ -54,42 +67,46 @@ const BuySection = () => {
             <span>R$ 3.000,00</span>
           </Fade>
         </Styled.ListTitle>
-        <Styled.ListTitle>
+        <Styled.ListTitle
+          flexDirection={["column", "row", "row"]}
+          fontSize={[16, 18, 26]}
+          textAlign={["center", "", ""]}
+        >
           <Zoom delay={200}>
             <Styled.Elipse />
           </Zoom>
           <Fade right delay={200}>
-            um gestor de tráfego -
-            <span>R$ 5.000,00</span>
+            um gestor de tráfego -<span>R$ 5.000,00</span>
           </Fade>
         </Styled.ListTitle>
-        <Styled.ListTitle>
+        <Styled.ListTitle
+          flexDirection={["column", "row", "row"]}
+          fontSize={[16, 18, 26]}
+          textAlign={["center", "", ""]}
+        >
           <Zoom delay={300}>
             <Styled.Elipse />
           </Zoom>
           <Fade right delay={300}>
-            um analista de Business Intelligence -
-            <span>R$ 5.000,00</span>
+            um analista de Business Intelligence -<span>R$ 5.000,00</span>
           </Fade>
         </Styled.ListTitle>
       </Styled.List>
 
-      <Fade>
-        <Styled.TotalPriceContainer>
-          <TotalPrice />
-        </Styled.TotalPriceContainer>
-      </Fade>
+      <Styled.TotalPriceContainer>
+        <TotalPrice />
+      </Styled.TotalPriceContainer>
 
       <Styled.FinalDescription mx={[30, 70, 160]}>
         E se eu te contar que você <span>consegue </span>
-        tudo isso por muito menos que você imagina!
+        <br />
+        tudo isso por muito menos
+        <br /> que você imagina!
       </Styled.FinalDescription>
 
-      <Fade>
-        <Styled.ButtonContainer>
-          <Styled.RegisterBtn>TENHO INTERESSE</Styled.RegisterBtn>
-        </Styled.ButtonContainer>
-      </Fade>
+      <Styled.ButtonContainer onClick={() => showModal()}>
+        <Styled.RegisterBtn>TENHO INTERESSE</Styled.RegisterBtn>
+      </Styled.ButtonContainer>
     </Styled.MainBanner>
   );
 };

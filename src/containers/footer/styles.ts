@@ -4,13 +4,13 @@ import { background, flexbox, layout, space, typography } from "styled-system";
 export const MainBanner = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #05B4E9;
+  background-color: #05b4e9;
   height: 100%;
   width: 100%;
   ${background}
 `;
 
-export const MainContainer = styled.div`  
+export const MainContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,21 +31,19 @@ export const MainContainer = styled.div`
   @media (max-width: 523px) {
     margin: 0px 40px;
   }
-`
+`;
 
 export const LogoContainer = styled.div`
-
   svg {
-    margin-left: -48px;
-    margin-top: -20px
-    width: 360px;
+    /* margin-left: -48px;
+    margin-top: -20px; */
+    width: 280px;
 
     @media (max-width: 829px) {
       display: none;
     }
   }
-`
-
+`;
 
 export const Section = styled.div`
   display: flex;
@@ -54,12 +52,10 @@ export const Section = styled.div`
   justify-content: flex-start;
   margin-top: 30px;
   margin-right: 0px;
-`
-
-
+`;
 
 export const Title = styled.a`
-  font-size: 16px;
+  font-size: 24px;
   color: #fff;
   font-weight: bold;
   line-height: 50px;
@@ -72,7 +68,7 @@ export const Title = styled.a`
     color: #fff;
     opacity: 1;
   }
-`
+`;
 
 export const SocialMedia = styled.div`
   display: flex;
@@ -91,15 +87,16 @@ export const SocialMedia = styled.div`
       opacity: 1;
     }
   }
-`
+`;
 
-export const Copyright = styled.div `
+export const Copyright = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 5px 100px;
   padding-top: 20px;
-  
+  padding-bottom: 20px;
+
   @media (max-width: 770px) {
     flex-direction: column;
     border-top: 1px solid #fff;
@@ -112,7 +109,7 @@ export const Copyright = styled.div `
   @media (max-width: 403px) {
     margin: 0px 40px;
   }
-`
+`;
 
 export const Cnpj = styled.span`
   color: #fff;
@@ -121,21 +118,25 @@ export const Cnpj = styled.span`
   @media (max-width: 770px) {
     font-size: 13px;
   }
-`
+`;
 
-export const Terms = styled.span`
+export const Terms = styled.div`
   color: #fff;
-  font-size: 14px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  span {
+    font-size: 14px;
+    text-align: center;
 
-  @media (max-width: 770px) {
-    font-size: 13px;
+    @media (max-width: 770px) {
+      font-size: 13px;
+    }
   }
-`
+`;
 
 export const Name = styled.div`
   display: none;
-  text-align: center;
+
   color: #ffffff80;
   font-weight: bold;
   font-size: 18px;
@@ -148,8 +149,6 @@ export const Name = styled.div`
   @media (max-width: 403px) {
     font-size: 15px;
   }
-`
+`;
 
-export const IconContainer = styled.a`
-
-`
+export const IconContainer = styled.a``;

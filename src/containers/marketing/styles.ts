@@ -30,43 +30,23 @@ export const LogoContainer = styled.div`
     height: 332px;
     width: 480px;
   }
-`
+`;
 
 export const Title = styled.span`
-  font-size: 48px;
   color: #000000;
-  line-height: 70px;
-  margin: 75px 120px;
+  font-weight: 600;
+  font-family: "Sora";
   ${typography}
   ${space}
 
-  @media (max-width: 639px) {
-    font-size: 34px;
-    line-height: 40px;
-  }
-
-  @media (max-width: 478px) {
-    font-size: 26px;
-    line-height: 40px;
-    margin-top: 30px;
-    margin: 40px 40px;
-  }
-
-  @media (max-width: 390px) {
-    font-size: 22px;
-    line-height: 40px;
-    margin-top: 50px;
-    margin: 40px 40px;
-  }
-
   span {
-    color: #EE9F16;
+    color: #ee9f16;
   }
-`
+`;
 
 export const ButtonContainer = styled.div`
   margin-top: 80px;
-` 
+`;
 
 export const RegisterBtn = styled.a`
   display: flex;
@@ -80,7 +60,7 @@ export const RegisterBtn = styled.a`
   font-size: 16px;
   border-radius: 40px;
   font-weight: bold;
-  background-color: #11FFB3;
+  background-color: #11ffb3;
   letter-spacing: 1px;
   box-shadow: inset 0px -6px 3px rgba(0, 0, 0, 0.25);
   -webkit-transition: box-shadow 0.5s ease;
@@ -89,7 +69,7 @@ export const RegisterBtn = styled.a`
   -ms-transition: box-shadow 0.5s ease;
   transition: box-shadow 0.5s ease;
   transition: 0.5s;
-  
+
   ${typography}
   ${flexbox}
   ${space}
@@ -98,11 +78,10 @@ export const RegisterBtn = styled.a`
     :hover {
     transform: scale(1.02);
     color: #fff;
-    background-color: #11FFB3;
-    border-color: #11FFB3;
+    background-color: #11ffb3;
+    border-color: #11ffb3;
     box-shadow: inset 0px -6px 3px rgba(0, 0, 0, 0.25);
   }
-
 `;
 
 export const List = styled.div`
@@ -113,72 +92,54 @@ export const List = styled.div`
   margin: 0px 120px;
   ${typography}
   ${space}
+  ${layout}
 
   @media (max-width: 829px) {
     text-align: center;
-    
+
     svg {
-    display: none;
-  }
+      display: none;
+    }
   }
 
   @media (max-width: 478px) {
     margin: 0px 60px;
   }
-`
+`;
 
 export const SubTitle = styled.span`
-  font-size: 26px;
   color: #000000;
   display: flex;
+  font-weight: normal;
+  font-family: Sora;
   align-items: center;
-  margin-top: 20px;
-  gap: 15px;
+  margin-top: 16px;
+  flex-direction: row;
   ${typography}
   ${space}
 
-  @media (max-width: 478px) {
-    font-size: 22px;
+div {
+    display: flex;
+    align-items: center;
   }
 
-  @media (max-width: 390px) {
-    font-size: 20px;
+  svg {
+    width: 80%;
   }
-  
-`
+`;
 
 export const Description = styled.span`
   color: #000000;
   font-size: 40px;
-  margin: 120px 120px;
   font-weight: bold;
   max-width: 1000px;
   ${typography}
   ${space}
-
-  @media (max-width: 1480px) {
-    max-width: 865px;
-  }
-
-  @media (max-width: 639px) {
-    font-size: 26px;
-    line-height: 50px;
-  }
-
-  @media (max-width: 478px) {
-    font-size: 26px;
-    margin: 120px 40px;
-  }
-
-  @media (max-width: 390px) {
-    font-size: 20px;
-    margin: 120px 20px;
-  }
-`
+`;
 
 export const Elipse = styled.div`
-  background-color: #EE9F16;
+  background-color: #ee9f16;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-`
+`;
