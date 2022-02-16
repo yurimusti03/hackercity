@@ -1,8 +1,28 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import React from "react";
+import { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import GlobalStyle from "../styles/global";
 
-export default MyApp
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+
+import "antd/dist/antd.css";
+
+const client = new ApolloClient({
+  uri: 'https://api-funmidia.herokuapp.com/graphql',
+  // uri: "http://localhost:3000/graphql",
+  cache: new InMemoryCache(),
+});
+
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+
+  return (
+    <>
+      <ApolloProvider client={client}>
+        <Component {...pageProps} />
+        <GlobalStyle />
+      </ApolloProvider>
+    </>
+  );
+};
+
+export default MyApp;
