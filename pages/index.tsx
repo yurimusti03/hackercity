@@ -140,44 +140,49 @@ const Home: React.FC = () => {
           </Button>,
         ]}
       >
-        <StyledFrom.Form>
-          <StyledFrom.InputContainer>
+        <StyledFrom.Form p={[40, 40, 0]}>
+          <StyledFrom.InputContainer ml={[42, 42, 0]}>
             Nome:
             <StyledFrom.Input
+              width={[300, 300, 360]}
               placeholder="Seu nome..."
               type="name"
               value={nome}
               onChange={(e) => setNome(e.target.value)}
             />
           </StyledFrom.InputContainer>
-          <StyledFrom.InputContainer>
+          <StyledFrom.InputContainer ml={[42, 42, 0]}>
             Seu melhor email:
             <StyledFrom.Input
+              width={[300, 300, 360]}
               placeholder="exemplo@email.com.br"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </StyledFrom.InputContainer>
-          <StyledFrom.InputContainer>
+          <StyledFrom.InputContainer ml={[42, 42, 0]}>
             Seu Whatsapp
             <StyledFrom.Input
+              width={[300, 300, 360]}
               placeholder="(DDD) 99999-8888"
               value={celular}
               onChange={(e) => setCelular(e.target.value)}
             />
           </StyledFrom.InputContainer>
-          <StyledFrom.InputContainer>
+          <StyledFrom.InputContainer ml={[42, 42, 0]}>
             Numero de funcionários:
             <StyledFrom.Input
+              width={[300, 300, 360]}
               placeholder="Ex: 48"
               value={funcionarios}
               onChange={(e) => setFuncionarios(e.target.value)}
             />
           </StyledFrom.InputContainer>
-          <StyledFrom.InputContainer>
+          <StyledFrom.InputContainer ml={[42, 42, 0]}>
             Instagram da empresa:
             <StyledFrom.Input
+              width={[300, 300, 360]}
               placeholder="@suaempresa"
               value={instagram}
               onChange={(e) => setInstagram(e.target.value)}

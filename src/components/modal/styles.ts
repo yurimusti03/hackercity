@@ -76,7 +76,6 @@ export const Input = styled.input`
   margin-top: 5px;
   border-radius: 10px;
   height: 40px;
-  width: 360px;
   padding-left: 20px;
 
   ::placeholder {

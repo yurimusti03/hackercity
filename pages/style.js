@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import { layout, space } from "styled-system";
 
 export const Form = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 80%;
+  ${space}
+  ${layout}
 `;
 
 export const InputContainer = styled.div`
@@ -15,6 +19,7 @@ export const InputContainer = styled.div`
   color: #fff;
   font-size: 16px;
   font-weight: bold;
+  ${space}
 
   & + div {
     margin-top: 20px;
@@ -27,8 +32,9 @@ export const Input = styled.input`
   margin-top: 5px;
   border-radius: 10px;
   height: 40px;
-  width: 360px;
+
   padding-left: 20px;
+  ${layout}
 
   ::placeholder {
     font-size: 14px;
