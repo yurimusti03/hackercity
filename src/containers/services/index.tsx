@@ -25,6 +25,7 @@ const Main = ({ showModal }) => {
         `url(${Services})`,
         `url(${Services})`,
       ]}
+      backgroundPosition={["left", "left", "center"]}
     >
       <Styled.Title
         fontSize={[24, 30, 36]}
@@ -46,14 +47,14 @@ const Main = ({ showModal }) => {
         profissional!
       </Styled.SubTitle>
 
-      <Styled.CardsContainer>
+      <Styled.CardsContainer mt={[24, 32, 100]} gridGap={[0, 0, 60]}>
         <Fade bottom>
           <Styled.Card m={[48, 64, 0]}>
             <Styled.IconContainer>
-              <Icon1 />
+              <Icon1 width={[120, 140, 140]} />
             </Styled.IconContainer>
             <Styled.CardTitle>Criação de Identidade Visual</Styled.CardTitle>
-            <Styled.Description fontSize={[14, 14, 16]}>
+            <Styled.Description fontSize={[12, 14, 16]}>
               Uma identidade visual arquitetada
               <br /> e marcante é uma estratégia essencial
               <br /> para a marca, isso porque eleva
@@ -66,12 +67,12 @@ const Main = ({ showModal }) => {
         </Fade>
 
         <Fade bottom>
-          <Styled.Card m={[48, 64, 0]}>
+          <Styled.Card ml={[48, 64, 0]} mr={[48, 64, 0]} mb={[48, 64, 0]}>
             <Styled.IconContainer>
               <Icon2 />
             </Styled.IconContainer>
             <Styled.CardTitle>Criação de sites/landigin page</Styled.CardTitle>
-            <Styled.Description fontSize={[14, 14, 16]}>
+            <Styled.Description fontSize={[12, 14, 16]}>
               As landing pages são as páginas
               <br /> por onde os usuários
               <br /> acessam o site de sua empresa.
@@ -84,14 +85,14 @@ const Main = ({ showModal }) => {
         </Fade>
 
         <Fade bottom>
-          <Styled.Card m={[48, 64, 0]}>
+          <Styled.Card ml={[48, 64, 0]} mr={[48, 64, 0]} mb={[48, 64, 0]}>
             <Styled.IconContainer>
               <Icon3 />
             </Styled.IconContainer>
             <Styled.CardTitle>
               Tráfego para capitação de clientes
             </Styled.CardTitle>
-            <Styled.Description fontSize={[14, 14, 16]}>
+            <Styled.Description fontSize={[12, 14, 16]}>
               O tráfego pago é uma das maneiras mais
               <br /> efetivas de gerar lead e se vender
               <br /> pela internet. É composto por anúncios
@@ -106,12 +107,16 @@ const Main = ({ showModal }) => {
         </Fade>
 
         <Fade bottom>
-          <Styled.Card m={[48, 64, 0]}>
+          <Styled.Card
+            ml={[48, 64, 0]}
+            mr={[48, 64, 0]}
+            minHeight={[545, 545, 545]}
+          >
             <Styled.IconContainer>
               <Icon4 />
             </Styled.IconContainer>
             <Styled.CardTitle>Criação de conteúdo</Styled.CardTitle>
-            <Styled.Description fontSize={[14, 14, 16]}>
+            <Styled.Description fontSize={[16, 16, 16]}>
               Criação de conteúdo
               <br /> para sua empresa,
               <br /> materiais diversos para

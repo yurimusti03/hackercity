@@ -6,6 +6,7 @@ import {
   space,
   typography,
   grid,
+  gridGap,
 } from "styled-system";
 
 export const MainBanner = styled.div`
@@ -98,13 +99,14 @@ export const SubTitle = styled.span`
 export const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
-  margin-top: 100px;
+  /* gap: 5px; */
+  
   ${layout}
   ${space}
   ${typography}
   ${flexbox}
   ${grid}
+  ${gridGap}
 
   @media (max-width: 1040px) {
     grid-template-columns: repeat(1, 1fr);
@@ -140,10 +142,11 @@ export const Card = styled.div`
   flex-direction: column;
   align-items: center;
   border: 1px solid #fff;
-  border-radius: 30px;
+  border-radius: 60px;
   padding-bottom: 42px;
   padding-left: 24px;
   padding-right: 24px;
+  min-height: 428px;
   ${space}
   ${layout}
 `;
@@ -161,8 +164,8 @@ export const IconContainer = styled.div`
   margin-top: 50px;
 
   svg {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
   }
 `;
 

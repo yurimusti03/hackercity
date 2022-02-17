@@ -23,35 +23,36 @@ const Marketing = () => {
         `url(${MarketingBg})`,
         `url(${MarketingBg})`,
       ]}
+      backgroundPosition={["left", "left", "center"]}
     >
       <Styled.Title
-        fontSize={[20, 30, 32]}
+        fontSize={[22, 30, 32]}
         ml={[55, 80, 120]}
         mr={[55, 80, 120]}
         mt={[48, 48, 64]}
-        textAlign={["center", "", ""]}
+        textAlign={["center", "justify", "justify"]}
       >
         Será que seu <span>negócio</span> está preparado para a nova
         <span> revolução digital?</span>
         <br />
-        Estamos aqui pra te ajudar e se posicionar e vender muito mais <br />{" "}
+        Estamos aqui pra te ajudar a se posicionar e vender muito mais <br />{" "}
         através da internet.
       </Styled.Title>
 
-      <Styled.List mt={[32, 32, 32]} ml={[0, 0, 120]} mr={[0, 0, 120]}>
-        <Styled.SubTitle fontSize={[14, 14, 22]}>
+      <Styled.List mt={[32, 32, 32]} ml={[20, 0, 120]} mr={[20, 0, 120]}>
+        <Styled.SubTitle fontSize={[11, 14, 22]} textAlign={["center"]}>
           <div>
             <Elipse />
           </div>
           Você tem problemas com o marketing da sua empresa?
         </Styled.SubTitle>
-        <Styled.SubTitle fontSize={[14, 14, 22]}>
+        <Styled.SubTitle fontSize={[11, 14, 22]} textAlign={["center"]}>
           <div>
             <Elipse />
           </div>
           Você acha muito caro os profissionais da área?
         </Styled.SubTitle>
-        <Styled.SubTitle fontSize={[14, 14, 22]}>
+        <Styled.SubTitle fontSize={[11, 14, 22]} textAlign={["center"]}>
           <div>
             <Elipse />
           </div>
@@ -60,9 +61,10 @@ const Marketing = () => {
       </Styled.List>
 
       <Styled.Description
-        fontSize={[20, 25, 30]}
-        textAlign={["center", "", ""]}
+        fontSize={[18, 25, 30]}
+        textAlign={["center", "justify", "justify"]}
         ml={[32, 32, 120]}
+        mr={[32, 32, 120]}
         mt={[32, 32, 64]}
         pb={[64, 64, 120]}
       >

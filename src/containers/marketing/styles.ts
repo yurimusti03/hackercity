@@ -8,7 +8,7 @@ export const MainBanner = styled.div`
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+
   height: 100%;
   ${layout}
   ${flexbox}
@@ -93,24 +93,13 @@ export const List = styled.div`
   ${typography}
   ${space}
   ${layout}
-
-  @media (max-width: 829px) {
-    text-align: center;
-
-    svg {
-      display: none;
-    }
-  }
-
-  @media (max-width: 478px) {
-    margin: 0px 60px;
-  }
 `;
 
 export const SubTitle = styled.span`
+  width: 100%;
   color: #000000;
   display: flex;
-  font-weight: normal;
+  font-weight: 600;
   font-family: Sora;
   align-items: center;
   margin-top: 16px;
@@ -121,10 +110,10 @@ export const SubTitle = styled.span`
 div {
     display: flex;
     align-items: center;
-  }
-
-  svg {
-    width: 80%;
+    margin-right: 12px;
+    svg {
+      width: 12px;
+    }
   }
 `;
 

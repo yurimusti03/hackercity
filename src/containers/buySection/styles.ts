@@ -1,5 +1,13 @@
 import styled from "styled-components";
-import { background, flexbox, layout, space, typography } from "styled-system";
+import {
+  background,
+  flexbox,
+  grid,
+  gridGap,
+  layout,
+  space,
+  typography,
+} from "styled-system";
 
 export const MainBanner = styled.div`
   display: flex;
@@ -7,7 +15,7 @@ export const MainBanner = styled.div`
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+
   height: 100%;
   padding-top: 80px;
   ${background}
@@ -94,6 +102,7 @@ export const List = styled.div`
   ${space}
   ${layout}
   ${flexbox}
+  ${gridGap}
 `;
 
 export const ListTitle = styled.span`
@@ -101,10 +110,11 @@ export const ListTitle = styled.span`
   align-items: center;
   color: #000000;
   margin-top: 10px;
-  gap: 15px;
+
   font-weight: bold;
   ${typography}
   ${flexbox}
+  ${grid}
 
   span {
     color: #e59720;
@@ -113,9 +123,10 @@ export const ListTitle = styled.span`
 
 export const Elipse = styled.div`
   background-color: #ee9f16;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
+  margin-right: 16px;
 
   @media (max-width: 1040px) {
     display: none;

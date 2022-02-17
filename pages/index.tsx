@@ -14,7 +14,7 @@ import { gql, useMutation } from "@apollo/client";
 import Loading from "../../components/Loading";
 import Modal from "antd/lib/modal/Modal";
 
-import * as StyledFrom from "./style";
+import * as StyledFrom from "../style";
 
 const CREATE_LEAD = gql`
   mutation CreateLandingpage($input: LandingpageInput) {

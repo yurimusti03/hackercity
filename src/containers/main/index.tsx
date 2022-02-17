@@ -20,29 +20,32 @@ const Main = () => {
       justifyContent={["center", "center", "center"]}
       backgroundImage={[`url(${MainBg})`, `url(${MainBg})`, `url(${MainBg})`]}
     >
-      <Styled.LogoContainer mt={[50, 50, 0]} ml={[50, 50, 128]}>
-        <Logo />
-      </Styled.LogoContainer>
+      <Fade left>
+        <Styled.LogoContainer mt={[50, 50, 0]} ml={[50, 50, 128]}>
+          <Logo />
+        </Styled.LogoContainer>
+      </Fade>
+      <Fade left>
+        <Styled.TextContainer ml={[50, 70, 124]} mt={[0, 0, 16]}>
+          <Styled.Title fontSize={[24, 30, 64]} lineHeight={["1", "1", "1.2"]}>
+            Uma solução inteligente de
+            <br /> marketing e publicidade <br />
+            para sua empresa!
+          </Styled.Title>
 
-      <Styled.TextContainer ml={[50, 70, 124]} mt={[0, 0, 16]}>
-        <Styled.Title fontSize={[30, 30, 64]} lineHeight={["1", "1", "1.2"]}>
-          Uma solução inteligente de
-          <br /> marketing e publicidade <br />
-          para sua empresa!
-        </Styled.Title>
-
-        <Styled.ButtonContainer mt={[32, 32, 16]}>
-          <Styled.RegisterBtn
-            onClick={() => {
-              window.scrollBy(0, 764);
-            }}
-            fontSize={[18, 18, 26]}
-            width={[150, 230, 230]}
-          >
-            SAIBA MAIS
-          </Styled.RegisterBtn>
-        </Styled.ButtonContainer>
-      </Styled.TextContainer>
+          <Styled.ButtonContainer mt={[32, 32, 16]}>
+            <Styled.RegisterBtn
+              onClick={() => {
+                window.scrollBy(0, 764);
+              }}
+              fontSize={[18, 18, 26]}
+              width={[150, 230, 230]}
+            >
+              SAIBA MAIS
+            </Styled.RegisterBtn>
+          </Styled.ButtonContainer>
+        </Styled.TextContainer>
+      </Fade>
     </Styled.MainBanner>
   );
 };
