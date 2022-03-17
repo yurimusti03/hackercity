@@ -1,0 +1,60 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.ant-modal-content{
+  border-radius: 10px !important;
+  border: 1px solid #ccc;
+}
+
+ .modalStyle .ant-modal-header {
+  padding: 16px 24px;
+  background: #444;
+  border-bottom: 0;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.modalStyle .ant-modal-body {
+  background: #444;
+  font-family: "Free Pixel";
+  color: #fff;
+  font-size: 18px;
+}
+
+.modalStyle .ant-modal-footer {
+  background: #444;
+  font-family: "Free Pixel";
+  color: #fff;
+border-top: 0px;
+border-bottom-left-radius: 10px !important;
+border-bottom-right-radius: 10px !important;
+}
+
+
+.modalStyle .ant-modal-title {
+  color: #fff;
+  font-family: "upheadvtt";
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.modalStyle .ant-modal-close {
+display: none;
+}

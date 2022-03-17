@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Free Pixel';
+    src: local('FreePixel'), url(../src/assets/fonts/FreePixel.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'upheadvtt';
+    src: local('upheadvtt'), url(../src/assets/fonts/upheavtt.ttf) format('truetype');
+  }
+
+
+  @font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(../src/assets/fonts/Roboto-Regular.ttf) format('truetype');
+  }
