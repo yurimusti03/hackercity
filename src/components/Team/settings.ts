@@ -14,7 +14,7 @@ export const dataTeamTest = [
   {
     photo: photoEduardo,
     name: "Eduardo Azevedo",
-    tag: "CEO (Founder)",
+    tag: "CEO",
     description:
       "Audiovisual specialist, businessman, branding strategist and innovation lover.",
     links: {
@@ -26,7 +26,7 @@ export const dataTeamTest = [
   {
     photo: photoEduardo,
     name: "Eduardo Azevedo",
-    tag: "CEO (Founder)",
+    tag: "CEO",
     description:
       "Audiovisual specialist, businessman, branding strategist and innovation lover.",
     links: {
@@ -38,7 +38,7 @@ export const dataTeamTest = [
   {
     photo: photoEduardo,
     name: "Eduardo Azevedo",
-    tag: "CEO (Founder)",
+    tag: "CEO",
     description:
       "Audiovisual specialist, businessman, branding strategist and innovation lover.",
     links: {
@@ -50,7 +50,7 @@ export const dataTeamTest = [
   {
     photo: photoEduardo,
     name: "Eduardo Azevedo",
-    tag: "CEO (Founder)",
+    tag: "CEO",
     description:
       "Audiovisual specialist, businessman, branding strategist and innovation lover.",
     links: {
@@ -65,23 +65,12 @@ export const dataTeam = [
   {
     photo: photoEduardo,
     name: "Eduardo Azevedo",
-    tag: "CEO (Founder)",
+    tag: "CEO",
     description:
       "Audiovisual specialist, businessman, branding strategist and innovation lover.",
     links: {
       instagram: "https://www.instagram.com/azveduardo/",
       linkedin: "",
-      twitter: "",
-    },
-  },
-  {
-    photo: photoCaio,
-    name: "Caio Santos",
-    tag: "COO",
-    description: "Software developer, crypto investor and geek.",
-    links: {
-      instagram: "",
-      linkedin: "https://www.linkedin.com/in/caio-cesario-santos/",
       twitter: "",
     },
   },
@@ -93,6 +82,17 @@ export const dataTeam = [
     links: {
       instagram: "",
       linkedin: "https://www.linkedin.com/in/yuri-mustifaga/",
+      twitter: "",
+    },
+  },
+  {
+    photo: photoCaio,
+    name: "Caio Santos",
+    tag: "COO",
+    description: "Software developer, crypto investor and geek.",
+    links: {
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/caio-cesario-santos/",
       twitter: "",
     },
   },

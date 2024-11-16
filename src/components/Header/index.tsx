@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 
 import { Props } from "./type";
@@ -11,8 +12,8 @@ const Header = ({ title, route }: Props) => {
   return (
     <Styled.MainHeader height={[60, 70]}>
       <Styled.Title margin-left={[10, 15, 20]} fontSize={[20, 25, 30]}>
-        <img src={logoOlho.src} style={[]} />
-        <img src={logo.src} style={[]} />
+        <img src={logoOlho.src} alt="" style={{ width: "25%" }} />
+        <img src={logo.src} alt="" style={{ width: "50%", marginLeft: 12 }} />
       </Styled.Title>
       <Styled.Nav display={["none", "none", "none", "flex"]}>
         {route?.map((e, i) => {

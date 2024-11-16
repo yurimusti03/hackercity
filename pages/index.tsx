@@ -16,16 +16,11 @@ const Page = ({}) => {
       <Header
         // title="Hacker City"
         route={[
-          { title: "Noticias", routeName: "#home" },
-          { title: "Sobre a visualizer", routeName: "#chooseHacker" },
-          { title: "Quem somos ?", routeName: "#roadmap" },
-          { title: "NFTs", routeName: "#whitepaper" },
-          {
-            title: "metaverso",
-            routeName: "",
-            // url: "https://hackercity.gitbook.io/hacker-city/",
-          },
-          // { title: "Team", routeName: "#team" },
+          { title: "Home", routeName: "#home" },
+          { title: "Choose Hacker", routeName: "#chooseHacker" },
+          { title: "Roadmap", routeName: "#roadmap" },
+          { title: "Whitelist", routeName: "#whitepaper" },
+          { title: "Team", routeName: "#team" },
         ]}
       />
       <Banner />
